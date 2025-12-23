@@ -1,6 +1,11 @@
 plugins {
-    `java-library`
+    `java`
+    `application`
     `maven-publish`
+}
+
+configure<JavaApplication> {
+    mainClass.set("com.github.emotionbug.mmdtopptx.MermaidSvg2Pptx")
 }
 
 group = "com.github.emotionbug"
